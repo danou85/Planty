@@ -1,9 +1,16 @@
-# Ignorer tous les fichiers WordPress
-/wp-admin/
-/wp-includes/
-/wp-content/plugins/
-/wp-content/themes/
+# Ignorer tous les fichiers à la racine
+/*
 
-# Ne pas ignorer les fichiers modifiés dans ton thème ou plugin spécifique
-!/wp-content/themes/astra-child
-!/wp-content/plugins/ton-plugin/
+# Ne pas ignorer wp-content
+!wp-content/
+
+# Dans wp-content, ignorer tout sauf themes
+wp-content/*
+!wp-content/themes/
+
+# Dans themes, ignorer tout sauf ton thème personnalisé
+wp-content/themes/*
+!wp-content/themes/
+
+# Inclure tous les fichiers de ton thème
+!wp-content/themes/astra-child/**
