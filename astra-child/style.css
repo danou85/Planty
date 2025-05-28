@@ -1,0 +1,157 @@
+/*
+Theme Name: astra-child
+Template: astra
+Version: 1.0
+Text Domain: planty
+*/
+
+
+
+:root {
+    --main-color: #ece2da;
+    --secondary-color: #e0b9b4;
+    --tertiary-color: #e3d9d0;
+    --soft-coral: #dc9f96;
+    --terracotta: #D2776A;
+    --deep-crimson: #c02e44;
+    --soft-peach: #E0B9B4;
+    --accent-color: #3b8e46;
+    --color-btn: var(--soft-peach);
+    --color-btn-hover: var(--deep-crimson);
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-grey:  #666;
+  }
+
+
+.site-main{
+    background-color: var(--color-white);
+}
+
+.page-id-24 .site-main{
+    background-color: var(--color-white);
+}
+
+.page-id-29 .site-main{
+    background-color: var(--accent-color);
+}
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.header-image {
+    max-width: 100px;
+    height: auto;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0; /* Supprimer les marges verticales */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--color-primary, #74c69d); /* Ajoute une variable ou fallback */
+}
+
+/*
+*cannette 
+*/
+
+.cannette{
+	position: relative;
+    justify-content: center;
+	z-index: 10;
+}
+
+
+.tige-gauche{
+	position: absolute; 
+    right: 50%;
+    transform: translate(0%, -50%);
+    top: 50%;
+	z-index: -1;
+}
+  
+.tige-droite{
+	position: absolute; 
+    left: 50%;
+    transform: translate(0%, -50%);
+    top: 50%;
+	z-index: -1;
+}
+
+
+.energiedesplantes{
+    background-color: white;
+}
+
+/* Centrer le menu footer */
+.site-footer {
+    text-align: center; /* Centrer le contenu du footer */
+    padding: 20px 0; /* Espacement autour du footer */
+    background-color: #f1f1f1; /* Couleur de fond du footer, à adapter selon ton design */
+}
+
+/* Stylisation du menu footer */
+.footer-nav {
+    display: inline-block; /* Permet de centrer le menu */
+    margin: 0;
+}
+
+/* Liste du menu footer */
+.footer-menu {
+    list-style: none; /* Supprime les puces de la liste */
+    padding: 0;
+    margin: 0;
+}
+
+/* Éléments du menu */
+.footer-menu li {
+    display: inline; /* Aligne les éléments du menu horizontalement */
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+/* Liens du menu */
+.footer-menu a {
+    text-decoration: none; /* Enlève le soulignement */
+    color: #333; /* Couleur du texte */
+    font-size: 14px; /* Taille de police */
+}
+
+/* Couleur au survol du lien */
+.footer-menu a:hover {
+    color: #0073aa; /* Couleur lors du survol */
+}
+
+
+.container-btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
